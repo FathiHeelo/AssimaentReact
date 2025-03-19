@@ -10,7 +10,6 @@ const FlightSearch = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle search logic here
     console.log('Search data:', formData);
   };
 
