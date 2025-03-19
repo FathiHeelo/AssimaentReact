@@ -13,11 +13,10 @@ header, section, footer {
 }
 
 h1, h2, h3 {
-  color: #1b1e22;
 }
 
 p {
-  color: #eae1e1;
+  color: #fff6f6;
 }
 .flight-search-container {
   position: relative;
@@ -588,7 +587,6 @@ ul {
   color: #0056b3;
 }
 
-/* قسم الإشعارات والملف الشخصي */
 .user-section {
   display: flex;
   align-items: center;

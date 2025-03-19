@@ -18,7 +18,6 @@ const HeroSection = () => {
         <h1>Let's explore & travel the world</h1>
         <p>Find the best destinations and the most popular stays!</p>
 
-        {/* مربع البحث */}
         <Card className="search-box">
           <Card.Body>
             <Form onSubmit={handleSubmit}>
