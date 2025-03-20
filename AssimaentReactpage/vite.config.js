@@ -14,4 +14,6 @@ export default defineConfig({
       external: ['bootstrap', 'react-icons'], // ضمان عدم حصول مشاكل في الاستيراد
     },
   },
+  publicDir: 'public', // تأكد أن الصور داخل مجلد public سيتم قراءتها بشكل صحيح
+  assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.svg'], // دعم تحميل الصور
 });
