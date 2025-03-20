@@ -17,7 +17,7 @@ const FlightSearch = () => {
     <div className="flight-search-container">
       <div className="background-image">
         <img 
-          src="../src/assets/Banner  Background.png"
+          src="public/imges/Banner  Background.png"
           alt="Travel Landscape"
           className="full-background"
         />
