@@ -8,11 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "start": "react-scripts start",
-
-    "preview": "vite preview"
-
+    "preview": "vite preview",
+    "postinstall": "npm install bootstrap"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
