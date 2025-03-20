@@ -1,5 +1,4 @@
-
-import { FaBell } from "react-icons/fa";
+import { FaBell } from "react-icons/fa6"; 
 
 const Navbar = () => {
   return (
@@ -18,7 +17,11 @@ const Navbar = () => {
           <FaBell className="bell-icon" />
           <span className="notification-dot"></span>
         </div>
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" className="profile-pic" />
+        <img 
+          src="https://randomuser.me/api/portraits/women/44.jpg" 
+          alt="Profile" 
+          className="profile-pic" 
+        />
       </div>
     </nav>
   );
