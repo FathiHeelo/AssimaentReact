@@ -1,20 +1,23 @@
-const HolidayCard = ({ image, name, duration, price }) => (
-    <div className="holiday-card">
-      <img src={image} alt={name} />
-      <p>{name} - {duration}</p>
-      <p>${price}</p>
-    </div>
-  );
-  
-  const RecommendedHolidays = ({ holidays }) => (
-    <section>
+
+const RecommendedHolidays = ({ holidays }) => {
+  return (
+    <div className="recommended-holidays">
       <h2>Recommended Holidays</h2>
-      <div className="holidays-container">
-        {holidays.map((holiday, index) => (
-          <HolidayCard key={index} {...holiday} />
+      
+      <div className="holidays-grid">
+        {holidays.map((holiday) => (
+          <div key={holiday.name} className="holiday-card">
+            <img src={holiday.image} alt={holiday.name} />
+            <div className="holiday-info">
+              <h3>{holiday.name}</h3>
+              <p className="duration">{holiday.duration}</p>
+              <p className="price">${holiday.price}</p>
+            </div>
+          </div>
         ))}
       </div>
-    </section>
+    </div>
   );
-  
-  export default RecommendedHolidays;
+};
+
+export default RecommendedHolidays;

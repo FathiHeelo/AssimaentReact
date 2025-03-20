@@ -1,13 +1,23 @@
-const PopularDestinations = ({ destinations }) => (
-  <section>
-    <h2>Most Popular Destinations</h2>
-    {destinations.map((dest, index) => (
-      <div key={index} className="destination">
-        <img src={dest.image} alt={dest.name} />
-        <p>{dest.name} - ${dest.price}</p>
+
+
+const PopularDestinations = ({ destinations }) => {
+  return (
+    <div className="popular-destinations">
+      <h2>Most Popular Destinations</h2>
+      
+      <div className="destinations-grid">
+        {destinations.map((destination) => (
+          <div key={destination.name} className="destination-card">
+            <img src={destination.image} alt={destination.name} />
+            <div className="destination-info">
+              <h3>{destination.name}</h3>
+              <p>Starting from ${destination.price}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    ))}
-  </section>
-);
+    </div>
+  );
+};
 
 export default PopularDestinations;

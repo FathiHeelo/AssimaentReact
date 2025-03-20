@@ -1,13 +1,23 @@
-const PopularStays = ({ stays }) => (
-  <section>
-    <h2>Popular Stays</h2>
-    {stays.map((stay, index) => (
-      <div key={index} className="stay">
-        <img src={stay.image} alt={stay.name} />
-        <p>{stay.name} - ${stay.price}/night ({stay.rating})</p>
+
+const PopularStays = ({ stays }) => {
+  return (
+    <div className="popular-stays">
+      <h2>Popular Stays</h2>
+      
+      <div className="stays-grid">
+        {stays.map((stay) => (
+          <div key={stay.name} className="stay-card">
+            <img src={stay.image} alt={stay.name} />
+            <div className="stay-info">
+              <h3>{stay.name}</h3>
+              <p className="price">${stay.price}/night</p>
+              <p className="rating">Rating: {stay.rating}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    ))}
-  </section>
-);
+    </div>
+  );
+};
 
 export default PopularStays;
